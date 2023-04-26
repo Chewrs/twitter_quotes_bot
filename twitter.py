@@ -2,6 +2,7 @@
 import tweepy  # pip3 install tweepy
 import time
 import requests  # pipe install requests
+import config as C
 
 # insert you keys
 api_key = "*************************"
@@ -12,11 +13,13 @@ access_token_secret = "*********************************************"
 
 # Gainaing access and connecting to Twitter API using Credentials
 client = tweepy.Client(
-    bearer_token, api_key, api_secret, access_token, access_token_secret
+    C.BEARER_TOKEN, C.API_KEY, C.API_SECRET, C.ACCESS_TOKEN, C.ACCESS_TOKEN_SECRET
 )
 
 # Creating API instance. This is so we still have access to Twitter API V1 features
-auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_token_secret)
+auth = tweepy.OAuth1UserHandler(
+    C.API_KEY, C.API_SECRET, C.ACCESS_TOKEN, C.ACCESS_TOKEN_SECRET
+)
 api = tweepy.API(auth)
 
 
@@ -27,9 +30,7 @@ def quotes_d():
     api_url = "https://api.api-ninjas.com/v1/quotes?category={}&limit=1".format(
         category
     )
-    response = requests.get(
-        api_url, headers={"X-Api-Key": "vk47EpqwD07BnO+nL8O4Gg==CoPeTzJTrksmlvHq"}
-    )
+    response = requests.get(api_url, headers={"X-Api-Key": C.NINJAS_KEY})
     if response.status_code == requests.codes.ok:
         quotes = response.json()
         quote = quotes[0]["quote"]
