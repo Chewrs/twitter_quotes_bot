@@ -1,7 +1,7 @@
-# Importing Tweepy
-import tweepy
+# Importing the library
+import tweepy  # pip3 install tweepy
 import time
-import requests
+import requests  # pipe install requests
 
 # insert you keys
 api_key = "*************************"
@@ -20,6 +20,7 @@ auth = tweepy.OAuth1UserHandler(api_key, api_secret, access_token, access_token_
 api = tweepy.API(auth)
 
 
+# get the quotes from ninjas api
 def quotes_d():
     global quote
     category = "computers"
@@ -38,9 +39,7 @@ def quotes_d():
         print("Error:", response.status_code, response.text)
 
 
-# Creating a tweet to test the bot
-
-
+# set the text to tweet
 def tweets():
     global quote
     quote_text, author_text = quotes_d()
@@ -51,9 +50,10 @@ def tweets():
     print(f"Tweet {date_time}")
 
 
+# loop to tweet every hour
 while 1:
     try:
         tweets()
-        time.sleep(3600)
+        time.sleep(3600)  # 3600s = 1h
     except:
         continue
