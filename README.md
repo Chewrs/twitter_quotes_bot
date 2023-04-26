@@ -30,7 +30,7 @@ After setting up your API keys and access tokens, you can run the bot by running
 ```sh
 python twitter.py
 ```
-The bot will automatically tweet a new quote every hour, using a list of quotes defined in quotes.py. You can modify the list of quotes to include your own favorite quotes.
+The bot will automatically tweet a new quote every hour. You can modify the list of quotes to include your own favorite quotes.
 
 ## Contributing
 [CHE](https://chewrs.netlify.app/)
