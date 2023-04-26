@@ -3,12 +3,12 @@ import tweepy
 import time
 import requests
 
-# Credentials
-api_key = "6qz66iWIalpc5vjQ1pDkfvSFx"
-api_secret = "VZX6T43VdmXIAodGUE0OhJz9Cy8BlJye6zw0GJE2lmFAPZYMz5"
-bearer_token = r"AAAAAAAAAAAAAAAAAAAAANRqmwEAAAAAFVaa9GRaomdYveKzRPseRsIiuaw%3DvIDZEZ349D6m0tlGEGH1QrtTWS5AzPDD31xlFnd8qu03s2PeY8"
-access_token = "1459517200788705283-TfEDZgnt2pwxy8LZuH4NmdwMw9mO5K"
-access_token_secret = "sgK2aZqUqDprpH2R1Zz6Ihs540cP3hpnmBPiuctRbVLD2"
+# insert you keys
+api_key = "*************************"
+api_secret = "**************************************************"
+bearer_token = r"****************************************************************************************************************"
+access_token = "**************************************************"
+access_token_secret = "*********************************************"
 
 # Gainaing access and connecting to Twitter API using Credentials
 client = tweepy.Client(
