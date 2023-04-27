@@ -31,7 +31,7 @@ def tweets():
 while 1:
     try:
         tweets()
-        loop_int = int(C.LOOP)
+        loop_int = int(C.TIME_FOR_NEXT_TWEET_IN_SECONDS)
         time.sleep(loop_int)  # 3600s = 1h
     except:
         continue
