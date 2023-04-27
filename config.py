@@ -7,4 +7,4 @@ ACCESS_TOKEN_SECRET = "your_access_token_secret_here"
 NINJAS_KEY = "your_ninjas_api_key_here"
 
 # loop every? (second)
-LOOP = "3600"
+TIME_FOR_NEXT_TWEET_IN_SECONDS = 3600  # 1 hour
