@@ -48,3 +48,5 @@ My Tweets Bot is licensed under the [MIT License](https://github.com/Chewrs/twit
 My Tweets Bot was inspired by [this tutorial](https://www.youtube.com/watch?v=BdmUhQnPToM) on building a Twitter bot with Tweepy. Thanks for the great tutorial! 
 
 Additionally, I would like to thank ChatGPT for their assistance in helping me create this README file. 
+
+> In the next update, bots will be able to comment and like posts !!!
